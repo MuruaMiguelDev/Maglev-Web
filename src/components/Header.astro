@@ -1,35 +1,65 @@
 ---
-import Button from './Button.astro';
+import Button from "./Button.astro";
 ---
-<header class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
+
+<header
+  class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-gray-100"
+>
   <nav class="container mx-auto px-4 sm:px-6 py-4">
     <div class="flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-          
-          <img class="rounded-xl" src="/public/Logo.svg" alt="">
+          <img class="rounded-xl" src="/Logo.svg" alt="Maglev">
         </div>
         <div>
-          <span class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Maglev</span>
-          <span class="text-xl sm:text-2xl font-bold gradient-text">Servicios Eléctricos</span>
+          <span
+            class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+            >ElectroServicios</span
+          >
+          <span class="text-xl sm:text-2xl font-bold gradient-text">Pro</span>
         </div>
       </div>
 
-      <div class="hidden lg:flex space-x-8">
-        <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group">Inicio
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      <div class="hidden md:flex space-x-8">
+        <a
+          href="#inicio"
+          class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+          >Inicio
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+          ></span>
         </a>
-        <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group">Servicios
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        <a
+          href="#servicios"
+          class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+          >Servicios
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+          ></span>
         </a>
-        <a href="#galeria" class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group">Galería
-          <span class="absolute -bottom-1 left-0 w-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        <a
+          href="#galeria"
+          class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+          >Galería
+          <span
+            class="absolute -bottom-1 left-0 w-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+          ></span>
         </a>
-        <a href="#nosotros" class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group">Nosotros
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        <a
+          href="#nosotros"
+          class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+          >Nosotros
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+          ></span>
         </a>
-        <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group">Contacto
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        <a
+          href="#contacto"
+          class="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+          >Contacto
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+          ></span>
         </a>
       </div>
 
@@ -37,20 +67,56 @@ import Button from './Button.astro';
         <Button variant="premium" label="Llamar Ahora" />
       </div>
 
-      <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-blue-600 transition-colors p-2" aria-label="Abrir menú">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden text-gray-700 hover:text-blue-600 transition-colors p-2"
+        aria-label="Abrir menú"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
 
-    <div id="mobile-menu" class="lg:hidden hidden mt-6 pb-6 border-t border-gray-100">
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden mt-6 pb-6 border-t border-gray-100"
+    >
       <div class="flex flex-col space-y-4 pt-6">
-        <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium">Inicio</a>
-        <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium">Servicios</a>
-        <a href="#galeria" class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium">Galería</a>
-        <a href="#nosotros" class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium">Nosotros</a>
-        <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium">Contacto</a>
+        <a
+          href="#inicio"
+          class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium"
+          >Inicio</a
+        >
+        <a
+          href="#servicios"
+          class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium"
+          >Servicios</a
+        >
+        <a
+          href="#galeria"
+          class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium"
+          >Galería</a
+        >
+        <a
+          href="#nosotros"
+          class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium"
+          >Nosotros</a
+        >
+        <a
+          href="#contacto"
+          class="text-gray-700 hover:text-blue-600 transition-colors py-2 font-medium"
+          >Contacto</a
+        >
         <Button variant="premium" label="Llamar Ahora" />
       </div>
     </div>
