@@ -1,0 +1,93 @@
+# ──────────────────────────────
+# 🚀 Proyecto Astro + Node + Tailwind
+# ──────────────────────────────
+
+# Dependencias de Node
+node_modules/
+
+# Carpetas de compilación / cache
+.astro/
+dist/
+build/
+.vite/
+.cache/
+
+# Archivos generados por Astro o herramientas de desarrollo
+.env.d.ts
+.env.d.ts.map
+
+# Archivos temporales y logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de entorno (NO subir credenciales)
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+.env.example.local
+
+# Configuración de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de salida o empaquetados
+*.zip
+*.tar
+*.tar.gz
+
+# Salidas de test / cobertura
+coverage/
+.nyc_output/
+jest-cache/
+jest-coverage/
+
+# Archivos específicos del proyecto
+# (no subir backups ni configuraciones locales)
+*.bak
+*.tmp
+*.temp
+*~
+*.local.json
+*.local.js
+
+# Imágenes optimizadas o generadas automáticamente (si las generas por script)
+public/img/generated/
+
+# Archivos de servicios o hosting
+.vercel/
+.netlify/
+.firebase/
+functions/node_modules/
+
+# ──────────────────────────────
+# ✅ Personalizado para ElectroServicios-Astro-Full
+# ──────────────────────────────
+
+# No subir zips locales del proyecto
+electroservicios-astro*.zip
+
+# Logs de correo o debug (Nodemailer)
+email_logs/
+mail_debug.log
+
+# Bloqueos de procesos (PM2, Nodemon, etc.)
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ──────────────────────────────
+# Fin del archivo
+# ──────────────────────────────

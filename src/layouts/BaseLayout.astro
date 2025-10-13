@@ -1,0 +1,15 @@
+---
+const { title = 'Maglev Servicios eléctricos - Electricista Profesional' } = Astro.props;
+---
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="icon" href="/Logo.svg" />
+  </head>
+  <body class="font-sans antialiased">
+    <slot />
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

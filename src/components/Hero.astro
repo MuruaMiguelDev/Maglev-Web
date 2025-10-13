@@ -1,0 +1,28 @@
+---
+import Button from './Button.astro';
+---
+<section id="inicio" class="hero-gradient text-white pt-24 sm:pt-28 pb-16 sm:pb-20 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+  <div class="container mx-auto px-4 sm:px-6 text-center relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <div class="floating-animation mb-8">
+        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto shadow-2xl">
+          
+          <img class="rounded-xl" src="./public/Logo.svg" alt="">
+        </div>
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
+        Servicios Eléctricos <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Profesionales</span>
+      </h1>
+      <p class="text-xl sm:text-2xl md:text-3xl mb-8 sm:mb-12 text-gray-200 max-w-4xl mx-auto leading-relaxed font-light">
+        Instalaciones, reparaciones y mantenimiento eléctrico con garantía total. <span class="font-semibold text-yellow-300">Disponibles 24/7</span> para emergencias.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center max-w-lg mx-auto">
+        <Button variant="primary" label="Presupuesto Gratuito" href="#contacto" />
+        <Button variant="ghost" label="Ver Servicios" href="#servicios" />
+      </div>
+    </div>
+  </div>
+  <div class="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-xl"></div>
+  <div class="absolute bottom-20 right-10 w-40 h-40 bg-purple-500/10 rounded-full blur-xl"></div>
+</section>
